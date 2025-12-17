@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "Bash(ls:*)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"title: Physical AI\npurpose: Teach beginners and intermediate learners embodied intelligence through simple, hands-on lessons in Docusaurus.\nstructure:\n  chapter: Introduction to Physical AI\n  lessons: What is Physical AI?, Humanoid Robotics Overview, Tools and Platforms\nguidelines: Beginner-friendly, practical, minimal theory, use real tools and small exercises.\nlesson_format: Overview → Hands-on steps → Code examples → Small simulation → Quick recap.\ndocusaurus: One folder per chapter, one markdown per lesson, sidebar included, learning outcomes at top.\ncode_style: Use fenced blocks, callouts, and tags for RAG embedding.\ndeployment: Publish on GitHub Pages with an integrated RAG chatbot.\" -Number 1 -ShortName \"physical-ai\")",
+      "SlashCommand(/sp.specify \"title: Physical AI\npurpose: Teach beginners and intermediate learners embodied intelligence through simple, hands-on lessons in Docusaurus.\nstructure:\n  chapter: Introduction to Physical AI\n  lessons: What is Physical AI?, Humanoid Robotics Overview, Tools and Platforms\nguidelines: Beginner-friendly, practical, minimal theory, use real tools and small exercises.\nlesson_format: Overview → Hands-on steps → Code examples → Small simulation → Quick recap.\ndocusaurus: One folder per chapter, one markdown per lesson, sidebar included, learning outcomes at top.\ncode_style: Use fenced blocks, callouts, and tags for RAG embedding.\ndeployment: Publish on GitHub Pages with an integrated RAG chatbot.\" -Number 1 -ShortName \"physical-ai\")",
+      "Bash(git checkout:*)",
+      "Bash(mkdir:*)"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+/* Custom CSS for Physical AI Book */
+
+/* 
+  Theme: Neon Circuit
+  A futuristic, high-contrast theme suitable for AI and Robotics.
+*/
+
+:root {
+  /* Primary Color: Electric Cyan */
+  --ifm-color-primary: #00f3ff;
+  --ifm-color-primary-dark: #00dbe6;
+  --ifm-color-primary-darker: #00cfd9;
+  --ifm-color-primary-darkest: #00abb3;
+  --ifm-color-primary-light: #26f5ff;
+  --ifm-color-primary-lighter: #4df7ff;
+  --ifm-color-primary-lightest: #80fbff;
+
+  /* Base Colors */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Custom Variables */
+  --pai-neon-glow: 0 0 10px var(--ifm-color-primary), 0 0 20px var(--ifm-color-primary);
+  --pai-secondary-color: #bd00ff; /* Electric Purple */
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+  --ifm-color-primary: #00f3ff;
+  --ifm-color-primary-dark: #00dbe6;
+  --ifm-color-primary-darker: #00cfd9;
+  --ifm-color-primary-darkest: #00abb3;
+  --ifm-color-primary-light: #26f5ff;
+  --ifm-color-primary-lighter: #4df7ff;
+  --ifm-color-primary-lightest: #80fbff;
+
+  --ifm-background-color: #0a0b10; /* Deep dark blue/black */
+  --ifm-background-surface-color: #13141f;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Navbar Styling */
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-primary-darkest);
+  box-shadow: 0 2px 10px rgba(0, 243, 255, 0.1);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(10, 11, 16, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__title {
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--pai-secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section (if used) */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--ifm-background-surface-color) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+/* Buttons */
+.button--primary {
+  background-color: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 243, 255, 0.2);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary);
+  color: #000;
+  box-shadow: var(--pai-neon-glow);
+  border-color: var(--ifm-color-primary);
+}
+
+/* Cards */
+.card {
+  border: 1px solid rgba(0, 243, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 243, 255, 0.15);
+  border-color: var(--ifm-color-primary);
+}
+
+/* Footer */
+.footer {
+  background-color: #050508;
+  border-top: 1px solid var(--ifm-color-primary-darkest);
+}
+
+.footer__title {
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar */
+.menu__link--active {
+  color: var(--ifm-color-primary);
+  background-color: rgba(0, 243, 255, 0.1);
+  border-right: 3px solid var(--ifm-color-primary);
+}
