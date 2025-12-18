@@ -5,8 +5,8 @@ const config = {
   tagline: 'Learning Embodied Intelligence Through Hands-On Lessons',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-username.github.io',
-  baseUrl: '/physical-ai-book/',
+  url: 'https://arijshah.github.io',
+  baseUrl: '/AI/',
 
   organizationName: 'arijh',
   projectName: 'physical-ai-book',
