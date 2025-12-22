@@ -55,7 +55,7 @@ const config = {
         title: 'Physical AI Book',
         logo: {
           alt: 'Physical AI Logo',
-          src: 'img/logo.svg',
+          src: 'img/Physical_AI.png',
           href: '/',
           target: '_self',
         },
