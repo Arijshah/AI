@@ -1,7 +1,7 @@
 // @ts-check
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Physical AI Book',
+  title: 'Physical AI and Robotics TextBook',
   tagline: 'Learning Embodied Intelligence Through Hands-On Lessons',
   favicon: 'img/favicon.ico',
 
@@ -52,10 +52,10 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Physical AI Book',
+        title: 'Physical AI TextBook',
         logo: {
           alt: 'Physical AI Logo',
-          src: 'img/Physical_AI.png',
+          src: 'img/Physical_AI.svg',
           href: '/',
           target: '_self',
         },

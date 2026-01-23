@@ -7,13 +7,15 @@
 
 :root {
   /* Primary Color: Electric Cyan */
-  --ifm-color-primary: #00f3ff;
-  --ifm-color-primary-dark: #00dbe6;
-  --ifm-color-primary-darker: #00cfd9;
-  --ifm-color-primary-darkest: #00abb3;
-  --ifm-color-primary-light: #26f5ff;
-  --ifm-color-primary-lighter: #4df7ff;
-  --ifm-color-primary-lightest: #80fbff;
+  --ifm-color-primary: rgb(39, 133, 138);
+  --ifm-color-primary-dark: #187277;
+  --ifm-color-primary-dark: #187277;
+  --ifm-color-primary-dark: #187277;
+  --ifm-color-primary-dark: #187277;
+  --ifm-color-primary-dark: #187277;
+  --ifm-color-primary-dark: #187277;
+
+
 
   /* Base Colors */
   --ifm-code-font-size: 95%;
@@ -26,13 +28,13 @@
 
 /* Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #00f3ff;
-  --ifm-color-primary-dark: #00dbe6;
-  --ifm-color-primary-darker: #00cfd9;
-  --ifm-color-primary-darkest: #00abb3;
-  --ifm-color-primary-light: #26f5ff;
-  --ifm-color-primary-lighter: #4df7ff;
-  --ifm-color-primary-lightest: #80fbff;
+  --ifm-color-primary: #126569;
+  --ifm-color-primary-dark: #1a6b70;
+  --ifm-color-primary-darker: #166367;
+  --ifm-color-primary-darkest: #1e7175;
+  --ifm-color-primary-light: #158389;
+  --ifm-color-primary-lighter: #16767b;
+  --ifm-color-primary-lightest: #187f82;
 
   --ifm-background-color: #0a0b10; /* Deep dark blue/black */
   --ifm-background-surface-color: #13141f;
@@ -119,4 +121,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-color-primary);
   background-color: rgba(0, 243, 255, 0.1);
   border-right: 3px solid var(--ifm-color-primary);
+}
+
+.round-img {
+  width: 150px;            /* adjust size as needed */
+  height: 150px;           /* keep width = height for perfect circle */
+  border-radius: 50%;      /* makes it round */
+  background-color: transparent; /* ensures no background shows */
+  object-fit: cover;       /* crops image to fit container if needed */
+  display: block;          /* optional: remove extra inline spacing */
 }
